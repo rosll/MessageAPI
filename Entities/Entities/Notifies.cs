@@ -17,8 +17,10 @@ namespace Entities.Entities
         [NotMapped]
         public string PropertyName { get; set; }
 
+        [NotMapped]
         public string Message { get; set; }
 
+        [NotMapped]
         public List<Notifies> Notifications { get; set; }
 
         public bool ValidateStringProperty(string value, string propertyName)

@@ -43,6 +43,18 @@ namespace WebAPIs.Token
             return this;
         }
 
+        public TokenJWTBuilder AddClaims(Dictionary<string, string> claims)
+        {
+            this.Claims.Union(claims);
+            return this;
+        }
+
+        public TokenJWTBuilder AddExpiry(int expiryInMinutes)
+        {
+            this.ExpiryInMinutes = expiryInMinutes;
+            return this;
+        }
+
         private void EnsureArguments()
         {
             if (this.SecurityKey == null)

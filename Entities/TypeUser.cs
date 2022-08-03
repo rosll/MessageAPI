@@ -1,6 +1,6 @@
-﻿namespace Entities.Entities
+﻿/*namespace Entities.Entities
 {
     public class TypeUser
     {
     }
-}
+}*/

@@ -11,7 +11,7 @@ namespace Entities.Entities
     [Table("messages")]
     public class Message : Notifies
     {
-        [Key, Column("id")]
+        [Column("id")]
         public int Id { get; set; }
 
         [Column("title")]

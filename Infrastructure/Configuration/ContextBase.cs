@@ -35,7 +35,7 @@ namespace Infrastructure.Configuration
 
         public string GetConnectionString()
         {
-            return "Data Source=ROMULO\\SQLEXPRESS; Initial Catalog=message; Integrated Security=True";
+            return "Data Source=ROMULO\\SQLEXPRESS; Initial Catalog=message; Integrated Security=True; Connect Timeout=15;Encrypt=False;TrustServerCertificate=False";
         }
     }
 }
